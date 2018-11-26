@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>EXIF INFO</title>
+	<link rel="icon" href="https://www.lllllll.ink/favicon.ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />	
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+	<script type="text/javascript" src="func.js"></script>
+	<script type="text/javascript" src="exif.js"></script>
+</head>
+<body>
+
+	<div class="head"></div>
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- sidebar -->
+		<div id="sidebar">
+			<div class="sidewrap">
+				<div class="sideimg">
+				<ul class="li"><a href="https://www.lllllll.ink"><img src="https://i.postimg.cc/pXPL5MF6/avatar.jpg" width="110px" height="110px"></a></ul>
+			</div>
+			<div class="sideli">
+				<ul class="li"><a class="Words" href="#top">Summary</a></ul>
+				<ul class="li"><a class="Words" href="#detial">Location</a></ul>
+				<ul class="li"><a class="Words" href="#about">About</a></ul>
+			</div>
+			</div>
+			
+		</div>
+
+		<!-- content -->
+		<div id="content">
+			<!-- Summary box -->		
+			<div class="boxdet"><a name="top"></a>
+				<a class="Words" style="float: right;padding: 5px 8px">Summary</a>
+				<div class="left">
+					
+
+					<div id="localImag">
+						<img id="preview" src="https://i.postimg.cc/pXPL5MF6/avatar.jpg"  width="340" onclick="uploadFile()" ></img>
+						<input id="upfile" type="file" onchange="filechange(this)" style="display:none"></input>
+						
+					</div>
+					<div id="note">
+						<span style="margin-left: 20px">
+							click to upload an image ！
+						</span>
+						
+					</div>					
+				</div>
+
+				<div class="right">
+					<div class="rightcontent">
+						<h5 id="model"></h4>
+						<h5 id ="datetime"></h4>
+						<h5 id="width"></h4>
+						<h5 id="height"></h4>
+						<h5 id="exposure"></h5>
+						<h5 id="fnumber"></h5>
+						<h5 id="iso"></h5>
+						<h5 id="gpsver"></h5>
+						<h5 id="gpsla"></h5>
+						<h5 id="gpslo"></h5>
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<!-- Location box -->
+			<div class="boxsum"><a name="detial"></a>
+				<a class="Words" style="float: right;padding: 5px 8px">Location</a>
+				<br>
+				<div id='map' style='width: 480px; height: 360px;'></div>
+
+			</div>
+
+
+			<!-- Upload box -->
+			<div class="boxabout"><a name="about">
+				<a class="Words" style="float: right;padding: 5px 8px">About</a>
+				<div class="aboutdoc">
+					<p>
+						EXIF信息，是可交换图像文件的缩写，是专门为数码相机的照片设定的，可以记录数码照片的属性信息和拍摄数据。EXIF可以附加于JPEG、TIFF、RIFF等文件之中，为其增加有关数码相机拍摄信息的内容和索引图或图像处理软件的版本信息
+					</p>
+					<p>
+						简单来说，从一张图片的EXIF信息中可以得到很多信息，例如你的拍摄设备型号、拍摄时间、曝光时间等等，甚至能存储拍摄是的GPS信息
+					</p>
+					<p>
+						目前大多数安卓设备也都具有此功能，你可能会在你的相册中看到你的某张照片的拍摄位置，这边是从EXIF信息中得到的。于是便会有通过照片获取你的隐私的问题，不过也不用过于担心，一般的社交网站或者app在你上传图片是会进行压缩，EXIF信息一般不会保留（原图则会保留这些信息）
+					</p>
+					<p>
+						此网页利用<a href="https://github.com/exif-js/exif-js/">EXIF.js</a> 解析图片中的信息，并由<a href="https://www.mapbox.com/">Mapbox</a>的api在地图上显示具体位置，制作此网页的目的是练习一下学了两天的JavaScript、复习一下HTML的知识，顺便提醒大家注重信息安全！
+						源码放到GitHub上，希望大佬指点，帮我优化下代码（还想加一个删除照片EXIF信息的功能，可能要鸽很久，日后有空了再加了）
+					</p>
+					<h3>最后推广一下我的辣鸡博客 <a href="https://www.lllllll.ink" id="biga">INK</a></h3>
+
+
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</div>	
+	
+
+</body>
+</html>

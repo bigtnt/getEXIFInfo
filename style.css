@@ -1,0 +1,161 @@
+﻿.head{
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	position: fixed;
+	z-index: 100;
+}
+#wrap{
+	width: 1080px;
+	height: 2800px;
+	margin: 0 auto;
+	
+}
+
+#sidebar{
+	width: 280px;
+	height: 100%;
+	
+	position: fixed;
+}
+.sidewrap{
+	margin-top: 40px;
+	float: right;
+}
+
+.sideimg{
+	position: relative;
+	right: 0;
+	margin: 5px 5px 15px 0px;
+}
+.sideli{
+	float: right;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul.li{
+	margin: 0;
+	padding: 3px;
+	text-align: right;
+}
+.Words{
+	padding: 2px 6px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode";
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: black;
+}
+
+.sideli ul.li a:hover{
+	padding: 2px 6px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode";
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+	background-color: red;
+}
+
+
+#content{
+	width: 74%;
+	height: 100%;
+	float: right;
+	
+}
+
+.boxsum{
+	width: 96%;
+	height: 35%;
+	margin:0 auto;
+	
+}
+
+.boxdet{
+	width: 96%;
+	height: 35%;
+	margin:0 auto;
+	
+}
+
+.boxabout{
+	width: 96%;
+	height: 30%;
+	margin:0 auto;
+	
+}
+
+
+.left{
+	width: 50%;
+	height: 70%;
+	
+	float:left;
+}
+
+
+#localImag img{
+	position: relative;	
+}
+
+#localImag{
+	border: 3px dotted black;
+	width: 340px;
+	height: 340px;
+	overflow:hidden;	
+	background-color: white;
+	position: relative; 
+	margin: 120px auto 10px auto;
+}
+
+.right{
+	width: 50%;
+	height: 70%;
+	
+	float: left;
+}
+
+.rightcontent{
+	width: 80%;
+	margin-top: 25%;
+	margin-left: 10%;
+}
+
+#map{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+
+.aboutdoc{
+	width: 80%;
+	height: 100%;
+	padding: 100px 60px;
+}
+
+#biga{
+	text-decoration: none;
+	color: red;
+	font-size: 20px;
+}
+#biga:hover{
+	font-family: "Lucida Grande", "Lucida Sans Unicode";
+	color: white;
+	font-size: 23px;
+	text-decoration: none;
+	background-color: red;
+}
+a{
+	text-decoration: none;
+	color: grey;
+	font-size: 21px;
+}
+p{
+	font-size: 18px;
+	line-height: 22px;
+	font-family: "Microsoft YaHei", SimSun;
+}
+
+
